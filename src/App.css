@@ -1,0 +1,186 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f5f6f8;
+  color: #222;
+}
+
+.app {
+  width: 95%;
+  max-width: 1100px;
+  margin: 40px auto;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+/* Winner */
+
+.winner-section {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.winner-section h2 {
+  margin-top: 0;
+}
+
+.winner-section p {
+  color: #777;
+}
+
+/* Table */
+
+.table-container {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  min-width: 700px;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  border: 1px solid #ddd;
+  text-align: center;
+  padding: 12px;
+}
+
+th {
+  background: #f1f3f5;
+}
+
+th:first-child,
+td:first-child {
+  width: 100px;
+}
+
+th input {
+  width: 100%;
+  border: none;
+  background: transparent;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  color: #222;
+  outline: none;
+}
+
+th small {
+  display: block;
+  margin-top: 5px;
+  color: #888;
+  font-size: 9px;
+}
+
+td input {
+  width: 80px;
+  padding: 8px;
+  text-align: center;
+  border: none;
+  outline: none;
+  font-size: 16px;
+}
+
+td input:focus {
+  background: #eef3ff;
+}
+
+.board-number {
+  font-weight: bold;
+  color: #666;
+}
+
+/* Total */
+
+tfoot td {
+  background: #eaf8ee;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+/* Add board */
+
+.add-board {
+  display: block;
+  margin: 20px auto;
+  padding: 12px 22px;
+  border: none;
+  border-radius: 8px;
+  background: #111827;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.add-board:hover {
+  background: #333;
+}
+
+/* Mobile */
+
+@media (max-width: 600px) {
+
+  .app {
+    width: 96%;
+    margin: 20px auto;
+  }
+
+  h1 {
+    font-size: 25px;
+  }
+
+  .winner-section {
+    padding: 15px;
+  }
+.winner-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.winner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  background: #fff7d6;
+  border: 1px solid #e6c84f;
+  border-radius: 8px;
+
+  padding: 12px 16px;
+
+  font-weight: bold;
+  color: #5c4a00;
+}
+
+.winner span {
+  font-weight: normal;
+  color: #806d20;
+}
+.row-total {
+  font-weight: bold;
+  background: #f5f5f5;
+  color: #333;
+}
+.remaining {
+  font-weight: bold;
+  background: #fff8e1;
+  color: #8a6500;
+}
+
+}
